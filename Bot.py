@@ -31,7 +31,7 @@ async def start(event):
     await event.client.send_file(
         event.chat_id,
         file="https://i.ibb.co/BHDbt7dT/IMG-20250206-194914-423.jpg",
-        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ sᴡᴇᴇᴛʏ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [sᴡᴇᴇᴛʏ ʙᴏᴛ](https://t.me/PRINCE_WEBZ)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [sᴡᴇᴇᴛʏ ʜᴇʟᴘ](https://t.me/APNA_CLUB_09)┓\n┣★ ʀᴇᴘᴏ › : [sᴜᴘᴘᴏʀᴛ](https://t.me/SWEETY_BOT_UPDATE/)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/PRINCE_WEBZ) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ sᴡᴇᴇᴛʏ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [sᴡᴇᴇᴛʏ ʙᴏᴛ](https://t.me/PRINCE_WEBZ)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [sᴡᴇᴇᴛʏ ʜᴇʟᴘ](https://t.me/APNA_CLUB_09)┓\n┣★ ᴜᴘᴅᴀᴛᴇ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/SWEETY_BOT_UPDATE/)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/PRINCE_WEBZ) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=[
             [Button.url("❤️‍🔥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", "https://t.me/SWEETY_MENTION_BOT?startgroup=true")],
@@ -53,7 +53,7 @@ async def help(event):
         buttons=(
             [
                 Button.url("❤️‍🔥 ꜱᴜᴘᴘᴏʀᴛ 💫", "https://t.me/APNA_CLUB_09"),
-                Button.url("❤️‍🔥 sᴜᴘᴘᴏʀᴛ 💫", "https://t.me/SWEETY_BOT_UPDATE"),
+                Button.url("❤️‍🔥 ᴜᴘᴅᴀᴛᴇ 💫", "https://t.me/SWEETY_BOT_UPDATE"),
             ]
         ),
     )
