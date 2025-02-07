@@ -47,7 +47,7 @@ async def start(event):
     await event.client.send_file(
         event.chat_id,
         file="https://envs.sh/6B6.jpg",
-        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ ᴍᴇɴᴛɪᴏɴ ʙᴏᴛ ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/sanataniiMusicBot)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ʀᴀᴅʜᴇ ʜᴇʟᴘ](https://t.me/+pvwa6dYi-5RkZmU1)\n┣★ ᴜᴘᴅᴀᴛᴇ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/ll_BOTCHAMBER_ll)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/TEAM_INDIANS_BOT) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ ᴍᴇɴᴛɪᴏɴ ʙᴏᴛ ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴍᴜsɪᴄ   : [ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/sanataniiMusicBot)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ʀᴀᴅʜᴇ ʜᴇʟᴘ](https://t.me/+pvwa6dYi-5RkZmU1)\n┣★ ᴜᴘᴅᴀᴛᴇ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/ll_BOTCHAMBER_ll)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/TEAM_INDIANS_BOT) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=[
             [Button.url("❤️‍🔥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", "https://t.me/MENTION_PROBOT?startgroup=true")],
