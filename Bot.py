@@ -136,7 +136,9 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+        await asyncio.sleep(2)
+usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
