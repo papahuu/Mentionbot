@@ -143,7 +143,23 @@ async def mentionall(event):
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
+            await asyncio.sleep(2)        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+        if usrnum == 5:
+            if mode == "text_on_cmd":
+                txt = f"{usrtxt}\n\n{msg}"
+                await client.send_message(chat_id, txt)
+            elif mode == "text_on_reply":
+                await msg.reply(usrtxt)
             await asyncio.sleep(2)
+            usrnum = 0
+            usrtxt = ""
+    try:
+        spam_chats.remove(chat_id)
+    except:
+        pass
+
+
+@
             usrnum = 0
             usrtxt = ""
     try:
@@ -158,6 +174,7 @@ async def _(event):
     if event.is_private:
         return await event.respond("sᴏʀʀʏ ʏᴏᴜ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀᴅᴍɪɴ ᴏɴʟʏ ɪɴ ɢʀᴏᴜᴘ")
 
+    # Check if user is an admin
     is_admin = False
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
@@ -171,22 +188,13 @@ async def _(event):
     if not is_admin:
         return await event.respond("ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs")
 
-    if event.pattern_match.group(1) and event.is_reply:
-        return await event.respond("ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ")
-    elif event.pattern_match.group(1):
-        mode = "text_on_cmd"
+    # Check for text or reply message
+    if event.pattern_match.group(1):
         msg = event.pattern_match.group(1)
     elif event.is_reply:
-        mode = "text_on_reply"
         msg = await event.get_reply_message()
-        if msg == None:
-            return await event.respond(
-                "ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)"
-            )
     else:
-        return await event.respond(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!"
-        )
+        msg = "Admins of this group:"
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -196,20 +204,22 @@ async def _(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f" \n [{x.first_name}](tg://user?id={x.id})"
+        usrtxt += f"\n[{x.first_name}](tg://user?id={x.id})"
         if usrnum == 5:
-            if mode == "text_on_cmd":
-                txt = f"{usrtxt}\n\n{msg}"
-                await client.send_message(chat_id, txt)
-            elif mode == "text_on_reply":
-                await msg.reply(usrtxt)
+            txt = f"{msg}\n\n{usrtxt}"
+            await client.send_message(chat_id, txt)
             await asyncio.sleep(2)
             usrnum = 0
             usrtxt = ""
+
+    if usrnum > 0:  # Send remaining admins if the count is less than 5
+        await client.send_message(chat_id, f"{msg}\n\n{usrtxt}")
+
     try:
         spam_chats.remove(chat_id)
     except:
         pass
+
 
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
