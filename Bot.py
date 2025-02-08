@@ -26,7 +26,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Radhe Mention Bot is Running!"
+    return "Shivi Mention Bot is Running!"
 
 @app.route('/ping')
 def ping():
@@ -46,12 +46,12 @@ async def start(event):
 
     await event.client.send_file(
         event.chat_id,
-        file="https://envs.sh/6B6.jpg",
-        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ ᴍᴇɴᴛɪᴏɴ ʙᴏᴛ ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴍᴜsɪᴄ   : [ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/sanataniiMusicBot)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ʀᴀᴅʜᴇ ʜᴇʟᴘ](https://t.me/+pvwa6dYi-5RkZmU1)\n┣★ ᴜᴘᴅᴀᴛᴇ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/ll_BOTCHAMBER_ll)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/TEAM_INDIANS_BOT) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        file="https://i.ibb.co/BHDbt7dT/IMG-20250206-194914-423.jpg",
+        caption="━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ɪ ᴀᴍ sᴡᴇᴇᴛʏ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [sᴡᴇᴇᴛʏ ʙᴏᴛ](https://t.me/rishu1286)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [sᴡᴇᴇᴛʏ ʜᴇʟᴘ](https://t.me/ur_rishu_143)\n┣★ ᴜᴘᴅᴀᴛᴇ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/vip_robotz/)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/rishu1286) ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=[
-            [Button.url("❤️‍🔥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", "https://t.me/MENTION_PROBOT?startgroup=true")],
-            [Button.url("❤️‍🔥 ɢʀᴏᴜᴘ 💫", "https://t.me/+pvwa6dYi-5RkZmU1"), Button.url("❤️‍🔥 ᴄʜᴀɴɴᴇʟ 💫", "https://t.me/TEAM_INDIANS_BOT")]
+            [Button.url("❤️‍🔥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", "https://t.me/ShiviBOT?startgroup=true")],
+            [Button.url("❤️‍🔥 ɢʀᴏᴜᴘ 💫", "t.me/ur_rishu_143"), Button.url("❤️‍🔥 ᴄʜᴀɴɴᴇʟ 💫", "https://t.me/vip_robotz")]
         ]
     )
 
@@ -60,14 +60,14 @@ async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
-    helptext = "✪ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ʀᴀᴅʜᴇ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴄᴏᴍᴍᴀɴᴅ: /mentionall\n✪ ᴄᴏᴍᴍᴀɴᴅ: /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ ɢᴏɪɴɢ ᴏɴ ᴘʀᴏᴄᴇss.\n✪ ᴄᴏᴍᴍᴀɴᴅ /admin ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴀᴅᴍɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n✪ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n✪ `Example: /mentionall Good Morning!`\n✪ Yᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ. Bᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇsssᴀɢᴇ."
+    helptext = "✪ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ sᴡᴇᴇᴛʏ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴄᴏᴍᴍᴀɴᴅ: /mentionall\n✪ ᴄᴏᴍᴍᴀɴᴅ: /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ ɢᴏɪɴɢ ᴏɴ ᴘʀᴏᴄᴇss.\n✪ ᴄᴏᴍᴍᴀɴᴅ /admin ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴀᴅᴍɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n✪ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n✪ `Example: /mentionall Good Morning!`\n✪ Yᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ. Bᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇsssᴀɢᴇ."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("❤️‍🔥 ꜱᴜᴘᴘᴏʀᴛ 💫", "t.me/ll_BOTCHAMBER_ll"),
-                Button.url("❤️‍🔥 ᴜᴘᴅᴀᴛᴇ 💫", "https://t.me/TEAM_INDIANS_BOT"),
+                Button.url("❤️‍🔥 ꜱᴜᴘᴘᴏʀᴛ 💫", "t.me/ur_rishu_143"),
+                Button.url("❤️‍🔥 ᴜᴘᴅᴀᴛᴇ 💫", "https://t.me/vip_robotz"),
             ]
         ),
     )
@@ -78,14 +78,14 @@ async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
-    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ ʀᴀᴅʜᴇ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [sᴡᴇᴇᴛʏ ʙᴏᴛ](https://t.me/vip_robotz/4)\n✪ ᴏғғɪᴄɪᴀʟ ᴍᴇᴍʙᴇʀ ᴏғ sᴡᴇᴇᴛʏ\n✪ ᴛᴇʟᴇɢʀᴀᴍ [ᴜsᴇʀ ɪᴅ ](https://t.me/rishu1286)\n✪ ғᴜᴛᴜʀᴇ ᴀɴᴇsᴛʜᴇᴛɪᴄ."
+    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ ɪɴᴅɪᴀɴ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [sᴡᴇᴇᴛʏ ʙᴏᴛ](https://t.me/vip_robotz/4)\n✪ ᴏғғɪᴄɪᴀʟ ᴍᴇᴍʙᴇʀ ᴏғ sᴡᴇᴇᴛʏ\n✪ ᴛᴇʟᴇɢʀᴀᴍ [ᴜsᴇʀ ɪᴅ ](https://t.me/rishu1286)\n✪ ғᴜᴛᴜʀᴇ ᴀɴᴇsᴛʜᴇᴛɪᴄ."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("❤️‍🔥 ꜱᴜᴘᴘᴏʀᴛ 💫", "https://t.me/TEAM_INDIANS_BOT"),
-                Button.url("❤️‍🔥 ᴜᴘᴅᴀᴛᴇ 💫", "https://t.me/ll_BOTCHAMBER_ll"),
+                Button.url(" ꜱᴜᴘᴘᴏʀᴛ ", "https://t.me/TEAM_INDIANS_BOT"),
+                Button.url(" ᴜᴘᴅᴀᴛᴇ ", "https://t.me/ll_BOTCHAMBER_ll"),
             ]
         ),
     )
@@ -136,16 +136,7 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        await asyncio.sleep(2)
-usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
-
-        if usrnum == 5:
-            if mode == "text_on_cmd":
-                txt = f"{usrtxt}\n\n{msg}"
-                await client.send_message(chat_id, txt)
-            elif mode == "text_on_reply":
-                await msg.reply(usrtxt)
-            await asyncio.sleep(2)        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
@@ -153,15 +144,6 @@ usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
             await asyncio.sleep(2)
-            usrnum = 0
-            usrtxt = ""
-    try:
-        spam_chats.remove(chat_id)
-    except:
-        pass
-
-
-@
             usrnum = 0
             usrtxt = ""
     try:
@@ -176,7 +158,6 @@ async def _(event):
     if event.is_private:
         return await event.respond("sᴏʀʀʏ ʏᴏᴜ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀᴅᴍɪɴ ᴏɴʟʏ ɪɴ ɢʀᴏᴜᴘ")
 
-    # Check if user is an admin
     is_admin = False
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
@@ -190,13 +171,22 @@ async def _(event):
     if not is_admin:
         return await event.respond("ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs")
 
-    # Check for text or reply message
-    if event.pattern_match.group(1):
+    if event.pattern_match.group(1) and event.is_reply:
+        return await event.respond("ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ")
+    elif event.pattern_match.group(1):
+        mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
     elif event.is_reply:
+        mode = "text_on_reply"
         msg = await event.get_reply_message()
+        if msg == None:
+            return await event.respond(
+                "ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)"
+            )
     else:
-        msg = "Admins of this group:"
+        return await event.respond(
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!"
+        )
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -206,22 +196,20 @@ async def _(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"\n[{x.first_name}](tg://user?id={x.id})"
+        usrtxt += f" \n [{x.first_name}](tg://user?id={x.id})"
         if usrnum == 5:
-            txt = f"{msg}\n\n{usrtxt}"
-            await client.send_message(chat_id, txt)
+            if mode == "text_on_cmd":
+                txt = f"{usrtxt}\n\n{msg}"
+                await client.send_message(chat_id, txt)
+            elif mode == "text_on_reply":
+                await msg.reply(usrtxt)
             await asyncio.sleep(2)
             usrnum = 0
             usrtxt = ""
-
-    if usrnum > 0:  # Send remaining admins if the count is less than 5
-        await client.send_message(chat_id, f"{msg}\n\n{usrtxt}")
-
     try:
         spam_chats.remove(chat_id)
     except:
         pass
-
 
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
